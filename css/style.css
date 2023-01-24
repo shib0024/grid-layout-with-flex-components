@@ -3,19 +3,23 @@ body {
     color: #222;
   }
   
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .emoji {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
-
-
+    display:flex;
+    flex-direction: column;
   }
   
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
-    order: 2;
-
   }
   
   .emoji a {
@@ -24,51 +28,31 @@ body {
     color: white;
     padding: 1rem;
     border-radius: 8px;
+    margin-top:auto;
+    align-self: stretch;
   }
   
   .icon {
     font-size: 4rem;
-    align-items: center;
+    margin:auto;
+  }
+
+  .emoji :nth-child(1) {
     order: 1;
-
-    justify-content: center;
-    text-align: center;
+}
+  .emoji :nth-child(2) {
+      order: 0;
   }
 
-  body{
-    margin: 2%;
-  }
-
-  .emojis {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* padding: 5%; */
-    gap: 20px;
-    /* margin: 2%; */
-    
-  }
-
-  .emoji{
-    display: flex;
-    /* flex-wrap: wrap;*/
-    /* justify-content: center;  */
-
-    flex-direction: column;
-
-    /* align-items: center;
-    justify-content: center; */
-
-  }
-
-  .emoji p {
+  .emoji :nth-child(3) {
     order: 3;
-    flex-grow: 2;
-  }
+}
 
-
-  .emoji a {
+.emoji :nth-child(4) {
     order: 4;
 }
+
+  
 Footer
 © 2023 GitHub, Inc.
 Footer navigation
@@ -83,4 +67,3 @@ API
 Training
 Blog
 About
-
