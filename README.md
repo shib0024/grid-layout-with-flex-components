@@ -2,7 +2,7 @@
 
 Fork this repository to start working on the assignment.
 
-here are the base CSS styles to start with.
+Here are the base CSS styles to start with.
 
 ```css
 body {
